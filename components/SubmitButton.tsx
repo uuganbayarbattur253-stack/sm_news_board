@@ -1,8 +1,7 @@
 interface SubmitButtonProps {
-  children: React.ReactNode;
+  children: React.ReactNode; // This means content goes BETWEEN the tags
   loading?: boolean;
 }
-
 export default function SubmitButton({ children, loading }: SubmitButtonProps) {
   return (
     <button

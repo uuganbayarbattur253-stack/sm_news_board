@@ -145,7 +145,7 @@ export default function NewsBoardPage() {
                   value={content} 
                   onChange={(e: any) => setContent(e.target.value)} 
                 />
-                <SubmitButton label="Publish Post"  />
+                <SubmitButton>Publish Post</SubmitButton>
               </form>
             </section>
           </aside>
