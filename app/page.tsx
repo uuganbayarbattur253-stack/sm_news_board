@@ -96,7 +96,7 @@ export default function NewsBoardPage() {
       <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <div className="bg-black text-white px-3 py-1 font-black text-xl tracking-tighter rounded">ML</div>
+            <div className="bg-black text-white px-3 py-1 font-black text-xl tracking-tighter rounded">MS</div>
             <h1 className="text-xl font-bold border-l pl-4 border-gray-200">NEWS BOARD</h1>
           </div>
           <div className="flex items-center gap-2 text-xs font-bold text-gray-500 uppercase tracking-widest">
