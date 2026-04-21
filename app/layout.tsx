@@ -1,13 +1,10 @@
-// app/layout.tsx
-import './globals.css';
 import { Inter } from 'next/font/google';
+import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
-
-export const metadata = {
-  title: 'SM News Board',
-  description: 'Official school updates and announcements',
-};
+// 1. Setup Inter to support Cyrillic characters
+const inter = Inter({ 
+  subsets: ['latin', 'cyrillic'] 
+});
 
 export default function RootLayout({
   children,
@@ -15,10 +12,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    // 2. Set language to Mongolian ('mn')
+    <html lang="mn">
       <body className={inter.className}>
-        {/* You can add a global Navbar here if you want */}
-        {children}
+        <div className="min-h-screen bg-slate-50">
+          {children}
+        </div>
       </body>
     </html>
   );
